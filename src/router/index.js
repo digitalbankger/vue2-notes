@@ -6,10 +6,10 @@ import GeneralPage from '@/pages/public/GeneralPage.vue';
 import UserDashboard from '@/pages/user/UserDashboard.vue';
 
 Vue.use(Router);
+const routerHistory = createWebHistory('/vue2-notes/');
 
 const router = new Router({
-  mode: 'hash',
-  base: '/vue2-notes',
+  history: routerHistory,
   routes: [
     {
       path: '/vue2-notes',
