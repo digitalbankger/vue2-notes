@@ -8,29 +8,29 @@ import UserDashboard from '@/pages/user/UserDashboard.vue';
 Vue.use(Router);
 
 const router = new Router({
-    mode: 'history',
-    routes: [
-      {
-        path: '/vue2-notes',
-        component: PublicLayout,
-        children: [
-          {
-            path: '',
-            component: GeneralPage,
-          },
-        ],
-      },
-      {
-        path: '/vue2-notes/dashboard',
-        component: DashboardLayout,
-        children: [
-          {
-            path: '',
-            component: UserDashboard,
-          },
-        ],
-      },
-    ],
+  mode: 'hash',
+  routes: [
+    {
+      path: '/vue2-notes',
+      component: PublicLayout,
+      children: [
+        {
+          path: '',
+          component: GeneralPage,
+        },
+      ],
+    },
+    {
+      path: '/vue2-notes/dashboard',
+      component: DashboardLayout,
+      children: [
+        {
+          path: '',
+          component: UserDashboard,
+        },
+      ],
+    },
+  ],
 });
 
 export default router;
