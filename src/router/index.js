@@ -7,7 +7,7 @@ import UserDashboard from '@/pages/user/UserDashboard.vue';
 import { createWebHistory } from 'vue-router';
 
 Vue.use(Router);
-const routerHistory = createWebHistory('/vue2-notes/');
+const routerHistory = createWebHistory('/vue2-notes');
 
 const router = new Router({
   history: routerHistory,
