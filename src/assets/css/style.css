@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #0A1F38;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1240px;
+}
+
+.move-up {
+  transition: transform 0.5s ease;
+}
+
+.move-up:hover {
+  transform: translateY(-10px);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+  
