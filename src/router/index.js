@@ -11,7 +11,7 @@ const router = new Router({
     mode: 'history',
     routes: [
       {
-        path: '/vue2-notes/',
+        path: '/vue2-notes',
         component: PublicLayout,
         children: [
           {
@@ -21,7 +21,7 @@ const router = new Router({
         ],
       },
       {
-        path: '/vue2-notes/dashboard/',
+        path: '/vue2-notes/dashboard',
         component: DashboardLayout,
         children: [
           {
