@@ -9,6 +9,7 @@ Vue.use(Router);
 
 const router = new Router({
   mode: 'hash',
+  base: '/vue2-notes',
   routes: [
     {
       path: '/vue2-notes',
